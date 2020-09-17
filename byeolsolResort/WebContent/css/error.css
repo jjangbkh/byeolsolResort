@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.error_main {
+	width: 50%;
+	height: 470px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.error_main .error_404 {
+	font-size: 150px;
+	margin-bottom: 30px;
+	margin-top: 22%;
+}
+
+.title {
+	font-size: 30px;
+	color: blue;
+	margin-bottom: 30px;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+	margin-bottom: 50px;
+}
+
+section{
+	margin-bottom: 15%;
+}

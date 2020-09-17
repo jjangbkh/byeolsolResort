@@ -1,0 +1,93 @@
+.writ{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	flex-direction: column;
+}
+
+.golftitle{
+  background:#5F925A;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.golfinfo{
+	display:flex;
+	margin-top:50px;
+	margin-bottom: 50px;
+	width:100%;
+	text-align: center;
+	justify-content: center;
+  padding-bottom: 40px;
+  font-size: 16px;
+  flex-direction: column;
+}
+.green{
+	color:#5F925A;
+}
+
+.golfinfo>p{
+  font-weight: bold;
+  text-align: center;
+	font-size: 18px;
+}
+
+.leaf{
+  color: #BCCDB7;
+  font-size: 25px;
+  padding: 15px 0 15px 0;
+}
+#allcourse{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.course{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px;
+}
+
+.moreinfo{
+width: 100%;
+height: 70px;
+background: lightgrey;
+text-align: center;
+}
+
+
+.text{
+	display: flex;
+	flex-direction: column;
+	width: 650px;
+	height: 205px;
+	padding: 70px 10px 70px 20px;
+	background:#FAF8F8;
+  word-spacing:-1px;
+}
+
+.texttitle{
+	font-size:35px;
+	font-weight: bold;
+
+}
+.textsubtitle{
+	font-size:20px;
+	font-weight: bold;
+	padding-top:10px;
+}
+
+.textmain{
+	padding-top:35px;
+}
+
+.map>img{
+	display:flex;
+	width: 600px;
+	height: 345px;
+}
+

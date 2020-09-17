@@ -1,0 +1,606 @@
+@charset "UTF-8";
+
+a:link {
+	color: #5c5c5c;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #5c5c5c;
+	text-decoration: none;
+}
+
+input[readonly="readonly"] {
+	border: none;
+}
+
+* {
+	font-family: '맑은 고딕', '굴림', 'Arial', sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+.topmargin {
+	margin-top: 35px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.line {
+	border-right: 1px solid grey;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 150px;
+	z-index: 50;
+	background: white;
+}
+
+header>div {
+	float: left;
+}
+
+header>div::after {
+	clear: both;
+}
+
+header:hover {
+	height: 350px;
+	background: linear-gradient(to bottom, white 70%, rgba(255, 255, 255, 0.7));
+	position: fixed;
+	transition: 1.5s;
+}
+
+.stitle {
+	font-size: 45px;
+	margin: 5% 0%;
+}
+
+#logo {
+	display: flex;
+}
+
+.logo1 {
+	position: absolute;
+	top: 30px;
+	left: 100px;
+	width: 180px;
+	height: 70px;
+	opacity: 1;
+}
+
+.logo2 {
+	position: absolute;
+	top: 30px;
+	left: 100px;
+	width: 180px;
+	height: 70px;
+	opacity: 0;
+}
+
+#manu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+#manu>ul {
+	height: 100px;
+	display: flex;
+	margin: 55px 0 0 0;
+	margin-right: 60px;
+	padding: 0;
+}
+
+#manu>ul>li {
+	float: left;
+}
+
+#manu>ul>li::after {
+	clear: both;
+}
+
+#manu>ul>li>a { /*대분류*/
+	padding: 7px 30px 10px;
+	font-weight: bold;
+}
+
+#manu>ul>li>ul>li>a { /*소분류*/
+	display: none;
+	animation: listshow 0.8s ease normal;
+	padding: 7px 5px 14px;
+	font-size: 15px;
+	color: #48474A;
+	font-weight: bold;
+	line-height: 1.2;
+	letter-spacing: -0.5px;
+	margin-left: 30px;
+}
+
+@
+keyframes listshow { 0% {
+	opacity: 0;
+	transform: translateY(-10px);
+}
+
+100%
+{
+opacity
+
+
+
+
+:
+
+
+ 
+
+
+1;
+transform
+
+
+
+
+:
+
+
+ 
+
+
+translateY
+
+
+
+
+(0);
+}
+}
+header:hover #manu>ul>li>ul>li>a {
+	text-decoration: none;
+	display: inherit;
+}
+
+header:hover #logo>a {
+	color: #48474A;
+}
+
+header:hover #side>ul>li>span {
+	color: #48474A;
+}
+
+#side>ul {
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	width: 100%;
+	margin: auto;
+	display: flex;
+}
+
+.navi {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navi>div {
+	float: left;
+}
+
+.navi>div:after {
+	display: block;
+	clear: both;
+}
+
+#side {
+	border: 1px solid #BFC7DE;
+	padding: 11px 12px;
+	font-size: 12px;
+	line-height: 1.2;
+	display: flex;
+	top: 45px;
+	right: 100px;
+	position: absolute;
+}
+
+#side>ul>li {
+	float: left;
+	padding: 0 11px;
+}
+
+#side>ul>li::after {
+	clear: both;
+}
+
+#side>ul>li>a {
+	font-weight: bold;
+	color: #000000;
+}
+
+#side>ul>li>span {
+	color: white;
+}
+
+@media ( max-width :1200px) {
+	header #manu>ul>li>a {
+		display: none;
+	}
+	header #manu>ul>li>ul {
+		display: none;
+	}
+	header {
+		pointer-events: none;
+	}
+	#side {
+		display: none;
+	}
+}
+
+@media ( min-width :1500px) {
+	#manu>ul>li>a {
+		padding: 7px 50px 10px;
+	}
+	#manu>ul>li>ul>li>a {
+		padding: 7px 25px 14px;
+	}
+}
+
+#roomInfo>ul>li>a {
+	color: white;
+	font-weight: bold;
+	opacity: 0.7;
+	margin: 0 auto;
+}
+
+#roomInfo>ul>li>a:hover {
+	opacity: 1;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+#fnb {
+	margin-right: 100px;
+}
+
+#fnb>ul>li {
+	padding: 10px;
+	float: left;
+	font-size: 14px;
+}
+
+#fnb>ul>li::after {
+	clear: both;
+}
+
+address {
+	font-style: normal;
+	font-size: 12px;
+	color: #48474A;
+}
+
+address ul {
+	display: flex;
+}
+
+address ul>li {
+	display: list-item;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.writ {
+	max-width: 1000px;
+	margin: 0 auto 0;
+	width: 100%;
+	text-align: center;
+}
+
+.subimage {
+	margin-top: 150px;
+	background: black;
+	width: 100%;
+	height: 300px;
+}
+
+.route {
+	width: 100%;
+	padding-top: 30px;
+	overflow: hidden;
+}
+
+.route>ul {
+	float: right;
+}
+
+.route>ul>li {
+	float: left;
+	padding: 0 5px;
+}
+
+.sibtitle {
+	padding: 40px 0 20px;
+}
+
+.sibtitle>h3 {
+	font-size: 40px;
+}
+
+#regis {
+	max-width: 1000px;
+	margin: auto;
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+form {
+	max-width: 1000px;
+	margin: auto;
+	width: 100%;
+}
+
+.formTd1 {
+	text-align: center;
+	font-weight: bold;
+	background-color: rgb(246, 246, 246);
+	
+}
+
+.formTd2 {
+	padding: 20px;
+	border-top:1px solid #d1d1d1;
+}
+
+table {
+	width: 100%;
+	margin-bottom: 20px;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.tableTr {
+	height: 95px;
+}
+
+a.li1 {
+	color: #fff;
+}
+
+td {
+	border-bottom: 1px solid #e6e6e6;
+	border-collapse: collapse;
+}
+
+input {
+	width: 175px;
+	height: 30px;
+}
+
+input[type="submit"] {
+	background-color: rgb(138, 141, 143);
+	color: rgb(255, 255, 255);
+}
+
+input[type="reset"] {
+	background-color: rgb(255, 255, 255);
+	;
+}
+
+input[type="submit"], input[type="reset"] {
+	width: 130px;
+	height: 50px;
+	max-width: 1000px;
+	margin: 28px 28px 28px 40px;
+	border: 1px solid #e6e6e6;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.tit_3 {
+	margin-right: 70%;
+	margin-bottom: 10px;
+}
+
+.spanText {
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.btn {
+	margin-left: 33.33%;
+	margin-bottom: 50px;
+}
+
+.ptag {
+	display: inline-block;
+	clear: both;
+}
+
+textarea {
+	width: 100%;
+	height: 105px;
+	resize: none;
+}
+
+input[type="checkbox"] {
+	width: 10px;
+	height: 10px;
+}
+
+h1 {
+	margin: 20px 0;
+	font-size: 30px;
+}
+
+.formText {
+	height: 115px;
+	line-height: 50px;
+}
+
+.li1 {
+	background-color: rgb(138, 141, 143);
+	color: rgb(255, 255, 255);
+}
+
+.li2 {
+	color: black;
+}
+
+.li3 {
+	color: black;
+}
+
+.flotBox_my_tap>li>a {
+	float: left;
+	padding: 0 13%;
+	border: 1px solid #e6e6e6;
+	height: 60px;
+	line-height: 60px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.submit {
+	margin-bottom: 100px;
+}
+
+.titleForm {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.answerForm {
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 6%
+}
+
+.anwer {
+	margin-bottom: 10px;
+}
+
+.hide {
+	display: none;
+}
+
+.myQnAPagenation {
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.myQnAtr {
+	font-weight: bold;
+	background-color: #d1d1d1;
+}
+
+.qNaUpForm {
+	text-aign: center;
+}
+
+td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+table tbody tr .dmq {
+	width: 100px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.btn {
+	float: right;
+}
+
+#updateBtn, #deleteBtn {
+	width: 110px;
+	height: 30px;
+	font-weight: bold;
+	border-style: none;
+}
+
+#updateBtn {
+	background-color: #d1d1d1;
+}
+
+.commentBox {
+	width: 80%;
+	float: left;
+}
+
+.writeBtn {
+	
+}
+
+.comment_main {
+	margin-top: 40px;
+}
+
+p {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.reComment {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+table tr .comWriter {
+	width: 100px;
+}
+
+table tr .answerBtn {
+	text-align: right;
+}
+
+table tr .answerBtn button {
+	height: 30px;
+	width: 50px;
+	background-color: #d1d1d1;
+	border-style: none;
+}
+.submit{
+	text-align:center;
+}
+table .number {
+	border-style: none;
+}
+.qNa_submit{
+	margin:0 auto;
+}
+
+.subbanner{
+	margin-top: 150px;
+	width: 100%;
+}
+
+.pageForm{
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+}

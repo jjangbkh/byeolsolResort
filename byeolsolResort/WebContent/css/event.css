@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+.writ{
+  margin-top: 50px;
+}
+
+.allevent{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.event{
+  display: flex;
+    border: 6px solid #E8E3E3;
+    background: #E8E3E3;
+    padding: 30px 10px 5px 10px;
+    text-align: center;
+    margin:0 15px 35px;
+    border-radius: 80px / 40px;
+}
+
+.event_area{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paginate{
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.padding{
+padding: 0 3px 0 3px;
+}
+
+.tx_brief{
+  font-size: 13px;
+  padding: 5px 10px 10px 10px;
+}
+
+.thmb{
+  margin-top: 10px;
+}
+
+.thmb>a>img{
+  width: 300px;
+  height: 265px;
+  padding-bottom: 10px;
+}
+
+.pageNum{
+	text-align: center;
+}
+
+.detailForm, .detailTable{
+	margin-bottom: 100px;
+}
+
+form[method="post"]{
+	margin-bottom: 100px;
+}
+
+.imgeSize{
+	width: 800px;
+	height: 1500px;
+	margin: 0 8%;
+}
+
+.hide{
+	display: none;
+}
+
+.detailForm, .detailTable{
+	margin: auto;
+}
+
+section{
+	margin-bottom: 100px;
+}
+
+.detailTable{
+	border-collapse: collapse;
+	display: flex;
+    border: 6px solid #E8E3E3;
+    background: #E8E3E3;
+    padding: 30px 10px;
+    text-align: center;
+    border-radius: 80px / 40px;
+}
+
+.eventTitle{
+	width: 13%;
+	padding-left: 10%;
+	border-right: 1px solid;
+}
+
+.eventRegDate{
+	padding-right: 11%;
+	text-align: right;
+	width: 8%
+}
+
+.eventTitle, .eventRegDate{
+	height: 50px;
+	font-size: 25px;
+}
+
+.addEventButton{
+	width: 100px;
+	height: 40px;
+	background: #ada6a6;
+	border-style: none;
+	color: #fff;
+	font-weight: bold;
+	float: right;
+	margin-bottom: 30px;
+}
+
+.updelButton{
+	width: 100px;
+	height: 40px;
+	background: #ada6a6;
+	border-style: none;
+	color: #fff;
+	font-weight: bold;
+	float: right;
+	margin: 0 30px 30px 0px;
+}
+
+.buttonForm{
+	height: 40px;
+	margin: 0 0 30px 0;
+}
+.tdTitle{
+	font-weight: bold;
+
+}
+td{
+	
+	padding: 10px;
+	border-bottom:1px solid #ada6a6
+}
+table{
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 1000px;
+}
+.submitBtn{
+	width: 130px;
+	height: 40px;
+	background-color: #E8E3E3;
+	border-style: none;
+	font-weight: bold;
+	margin-top: 30px;}
+
+.submitBtn_mom{
+	text-align: center;
+}
+
+.imgs{
+	width: 500px;
+	height: 500px;
+}
+
+.bottomNone{
+	border-bottom:  none;
+}
+
+.eventTable{
+	width: 0;
+}
+
+tbody{
+	width: 100%
+}

@@ -1,0 +1,196 @@
+.writ{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	flex-direction: column;
+}
+#allhiking{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tripinfo>p{
+  font-weight: bold;
+  text-align: center;
+	font-size: 18px;
+}
+
+.hikingtitle{
+  background:#4D5FAA;
+  width:500px;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.blue{
+  color:#4D5FAA;
+}
+
+.blues{
+  color: #BAC4D0;
+  font-size: 14px;
+}
+
+.hikinginfo{
+  display:flex;
+  margin-top:50px;
+  margin-bottom: 50px;
+  width:100%;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  font-size: 16px;
+  flex-direction: column;
+}
+
+.hikinginfo>p{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hikinglist{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 30px 60px 20px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #E4E1E1;
+}
+
+.mountainTitle{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.mountainTitle>i{
+  color:#4D5FAA;
+}
+
+.mountain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mountainimgs{
+  width: 600px;
+  height: 500px;
+  position: relative;
+
+}
+
+.mountainImg{
+  width: 600px;
+  height: 500px;
+  background: lightblue;
+  display: flex;
+  border-radius: 10%;
+}
+
+.imgshadow{
+  position: absolute;
+  width: 600px;
+  height: 130px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 55px 55px 0 0 ;
+}
+
+.imgtext{
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top:50px; left: 30px;
+
+}
+
+.mountainInfo1{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px 20px 30px;
+}
+
+.mountainInfo2{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px 170px 30px;
+}
+
+
+.bold{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mountainInfo>p{
+  display: flex;
+  font-size: 14px;
+}
+
+hr{
+    border: 1px dashed #E4E1E1;
+    width: 100%;
+    margin: 80px;
+}
+
+.events{
+  border: 1px solid #C3CEDC;
+  padding: 20px;
+  margin: 20px 0px;
+  font-weight: bold;
+}
+
+.events>p>i{
+  color: #5A8BCC;
+}
+
+.span{
+  width: 50px;
+  font-weight: bold;
+  color: #5A8BCC;
+}
+
+.drung{
+  font-size: 30px;
+font-weight: bold;
+padding-bottom: 30px;
+}
+
+.trees{
+  font-size: 100px;
+  position: absolute;
+  bottom: 0; right: 90px;
+  color: #E5E9ED;
+}
+.trees2{
+  font-size: 100px;
+  position: absolute;
+  bottom: 80px; left: 60px;
+  color: #E5E9ED;
+}
+
+.small{
+  font-size: 80px;
+}
+
+.left{
+  position: absolute;
+  top: 300px;
+  left: 400px;
+  font-size: 16px;
+}
+
+.course{
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  text-align: center;
+  line-height: 30px;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="model.mapper.QuestionMapper">
+
+<insert id="insertQuestion" parameterType="Question">
+insert into question(title,message,division,writer) values(#{title},#{message},#{division},#{writer})
+</insert>
+
+<update id="updateQuestion" parameterType="Question">
+update question set title = #{title}, message = #{message}, division = #{division} where id = #{id}
+</update>
+
+<delete id="deleteQuestion">
+delete from question where id = #{id}
+</delete>
+
+<select id="selectQuestion" resultType="Question">
+select * from question where id = #{id}
+</select>
+
+<select id="selectQuestionListByWriterWithLimit" resultType="Question">
+select * from question where writer = #{writer} order by reg_date desc limit #{firstRow}, #{questionCountPerPage}
+</select>
+
+<select id="selectQuestionList" resultType="Question">
+select * from question
+</select>
+
+<select id="countQuestionByState" resultType="int">
+select count(*) from question where state = "yet"
+</select>
+
+<select id="countQuestion" resultType="int">
+select count(*) from question where writer = #{writer}
+</select>
+
+<select id="selectQuestionByWriter" resultType="Question">
+select * from question where writer = #{writer}
+</select>
+
+<update id="updateQuestionByIdWithState">
+
+update question set state = #{state} where id = #{id}
+
+</update>
+
+<select id="selectQuestionListByStateWithLimit" resultType="Question">
+select * from question where state = "yet" limit #{firstRow}, #{questionCountPerPage}
+</select>
+
+
+</mapper>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="model.mapper.EventMapper">
+
+<insert id="insertEvent" parameterType="Event" keyProperty="id">
+
+insert into event(title,img_path,start_date,end_date,state) values(#{title},#{imgPath},#{startDate},#{endDate},#{state})
+
+</insert>
+
+<update id="updateEvent" parameterType="Event">
+update event set title = #{title} , img_path = #{imgPath} , start_date = #{startDate} , end_date = #{endDate} , state = #{state} where id = #{id}
+</update>
+
+<delete id="deleteEvent">
+delete from event where id = #{id}
+</delete>
+
+<select id="selectEventById" resultType="Event">
+select * from event where id = #{id}
+</select>
+
+<select id="selectEventList" resultType="Event">
+select * from event
+</select>
+
+<select id="selectEventListWithLimit" resultType="Event">
+select * from event limit #{firstRow},#{eventCountPerPage}
+</select>
+
+<select id="countEvent" resultType="int">
+select count(*) from event
+</select>
+
+
+</mapper>

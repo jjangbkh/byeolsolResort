@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="model.mapper.RoomMapper">
+
+<select id="selectRoomById" resultType="Room">
+select * from room where id = #{id}
+</select>
+
+<select id="selectRoomList" resultType="Room">
+select * from room
+</select>
+
+<select id="selectRoomListByConcept" resultType="Room">
+select * from room where concept = #{concept}
+</select>
+
+<select id="selectRommByRoomNum" resultType="Room">
+select * from room where room_num = #{roomNum}
+</select>
+
+</mapper>

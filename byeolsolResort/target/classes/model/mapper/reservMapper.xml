@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="model.mapper.ReservMapper">
+
+<insert id="insertReserv" parameterType="Reserv">
+insert into reserv(room_id,user_id,start_date,end_date,total_price,people_count) values(#{roomId},#{userId},#{startDate},#{endDate},#{totalPrice},#{peopleCount})
+</insert>
+
+<update id="updateReserv">	
+update reserv set room_id = #{roomId} , start_date = #{startDate} , end_date = #{endDate} , total_price = #{totalPrice}, people_count = #{peopleCount} where id = #{id}
+</update>
+
+<delete id="deleteReserv">
+delete from reserv where id = #{id} 
+</delete>
+
+<delete id="deleteReservByState">
+delete from reserv where state = '미입금';
+</delete>
+
+<select id="selectReservList" resultType="Reserv">
+select * from reserv
+</select>
+
+<select id="selectReservByRoomIdWithDate" resultType="Reserv">
+select * from reserv where room_id = #{roomId} and start_date between #{startDate} and #{endDate} OR room_id = #{roomId} and end_date between #{startDate} and #{endDate}
+</select>
+
+<select id="selectReservById" resultType="Reserv">
+select * from reserv where id = #{id}
+</select>
+
+<select id="reservCount" resultType="int">
+select count(*) from reserv 
+</select>
+
+<select id="selectReservByUserId" resultType="Reserv">
+select * from reserv where user_id = #{userId}
+</select>
+
+<select id="selectReservListByUserIdWithLimit" resultType="Reserv">
+select * from reserv where user_id = #{userId} limit #{firstRow},#{reservCountPerPage}
+</select>
+
+<select id="selectReservWithLimit" resultType="Reserv">
+select * from reserv limit #{firstRow},#{reservCountPerPage}
+</select>
+
+<select id="selectReservListByStartAndEndDate" resultType="Reserv">
+select * from reserv where start_date between #{startDate} and #{endDate} OR end_date between #{startDate} and #{endDate}
+</select>
+
+<update id="updateReservState">
+update reserv set state = #{state} where id = #{id}
+</update>
+
+<select id="reservCountWithUserId" resultType="int">
+select count(*) from reserv where user_id = #{userId}
+</select>
+
+</mapper>

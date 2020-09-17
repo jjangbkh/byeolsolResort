@@ -1,0 +1,71 @@
+.writ{
+  margin-top: 50px;
+}
+
+.byeolsolInfo{
+  display: flex;
+  flex-direction: column;
+}
+.infoImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoImg>img{
+	display:flex;
+}
+
+.infoTitle{
+  text-align: center;
+}
+
+.infotitle{
+  margin: 50px;
+  font-size: 30px;
+}
+
+.infoTxt{
+  word-spacing: -1px;
+  line-height: 25px;
+}
+
+.infoImg__2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.concept{
+  margin: 30px;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  flex-direction: column;
+  padding-bottom: 150px;
+}
+
+.concept>img{
+  width: 400px;
+  height: 400px;
+  border-radius: 70%;
+  position: relative;
+}
+
+.infoImg__2{
+  position: relative;
+}
+
+.concept>p{
+  word-spacing: -1px;
+  line-height: 18px;
+}
+
+.padding{
+  padding-top: 20px;
+  padding-bottom: 13px;
+}
+
+.fontsize{
+  font-size: 14px;
+}

@@ -1,0 +1,119 @@
+.writ{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	flex-direction: column;
+}
+#alltrip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tripinfo>p{
+  font-weight: bold;
+  text-align: center;
+	font-size: 18px;
+}
+
+.triptitle{
+  background:#C677A7;
+  width:500px;
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.purple{
+  color:#C677A7;
+}
+
+.tripinfo{
+  display:flex;
+  margin-top:50px;
+  margin-bottom: 50px;
+  width:100%;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  font-size: 16px;
+  flex-direction: column;
+}
+.triplist{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px;
+}
+
+.trip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #E4E1E1;
+}
+.tripimg>img{
+  width: 300px;
+  height: 200px;
+  display: flex;
+}
+.content{
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+  padding: 10px 20px;
+
+}
+.title{
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 5px;
+
+}
+
+.text{
+	padding-bottom: 10px;
+	font-size: 15px;
+	word-spacing:-1px;
+	padding-left: 20px;
+}
+.title>i{
+  color: #C677A7;
+}
+
+.triptext{
+  display: flex;
+}
+
+.tripadr{
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.content>a{
+	margin-top: 8px;
+	color:#C15598;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.tripadr>span>i{
+  color: #C677A7;
+}
+
+.more{
+  width: 100px;
+  height: 18px;
+  background:#C677A7;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
+}
